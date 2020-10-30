@@ -1,0 +1,41 @@
+-- HTML --
+
+. INDEX.html
+
+  Modale login -
+
+  Dopo il login, lo stato della prigione (numero Detenuti, numero guardie, deneuti evasi, etc.) pulsante vedi guardie (rimanda alla pagina), pulsante vedi prigionieri
+
+
+. Guardie.html
+    . Elenco Guardie
+    . Aggiungi Guardie (form)
+      ° FORM Guardie - Nome completo, data di nascita, livello competenza (principiante, esperto, etc.)
+
+. Prigionieri.html
+    . Elenco Prigionieri
+    . Aggiungi prigioniero
+      ° FORM Detenuti - Id del criminale, data di nascita, data di carcerazione, data di scarcerazione, reato commesso, vivo?, evaso?
+    . Vedi/aggiungi fascicoli
+
+-- CSS --
+FLEX-BOX (dopo)
+
+-- JS --
+
+class Guardia (
+  const Guardia = {
+      nome: "",
+      data: "",
+      luogoNascita: ""
+  }
+)
+class Prigioniero ()
+
+
+Todo:
+- coloreOcchi di prigionieri
+- implementare ricerca
+- implementare vivo/evaso
+- spostare form a sinistra
+- spostare box fascicolo

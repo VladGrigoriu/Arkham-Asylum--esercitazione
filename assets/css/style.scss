@@ -1,0 +1,209 @@
+$darkBlue: #192B63;
+$mediumBlue: #2e4ead;
+$black: #000000;
+$white: #fff;
+
+
+
+
+button {
+    padding: 0.8rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html {
+    font-size: 62,5%;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: content-box;
+    body {
+        background-color: $mediumBlue;
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $darkBlue;
+            color: $white;
+            padding: 0 2rem;
+
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
+
+
+            .fa-user {
+                font-size: 1.2rem;
+                margin-right: 0.3rem;
+            }
+        }
+
+
+        section {
+            background-color: white;
+        }
+
+        .loginModalContainer {
+            animation: modalUp .5s;
+            display: none;
+            flex-direction: column;
+            width: 100vh;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+
+            .loginModal {
+                display:flex;
+                flex-direction: column;
+                background-color: $white;
+                width: 20rem;
+                padding: 3rem 5rem;
+                margin: auto;
+
+                #modalHeader {
+                    h2 {
+                        margin: 2rem ;
+                        text-align: center;
+                    }
+
+
+                }
+            }
+
+            form {
+                text-align: center;
+                .inputField {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 1rem 0rem;
+                }
+
+                button {
+                    margin: 0 auto;
+                }
+            }
+        }
+
+
+
+
+        .mainIndex {
+            display: none; // cambia in none all'avvio
+            margin: 1rem 5rem;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: flex-start;
+            .mappaPrigione {
+                background-color: white;
+                width: 30rem;
+            }
+            .statoPrigione {
+                background-color: white;
+                width: 25rem;
+
+
+            }
+        }
+
+        .mainPrigionieri, .mainGuardie {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            section {
+                margin: 1rem;
+                padding: 1rem;
+            }
+
+            .fascicoli {
+                display: none;
+
+            }
+
+
+            .listaPrigionieri, .listaGuardie {
+                flex-grow: 1;
+
+                #insertListaPrigionieri, #insertListaGuardie {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-evenly;
+
+                    .singoloPrigioniero, .singoloGuardie {
+                        // width: 4rem;
+                        padding: 0.8rem;
+                        margin: 0.2rem;
+                        margin-bottom: 2rem;
+                        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                    }
+
+                    .singoloGuardie {
+                        max-width: 10rem;
+                    }
+                }
+
+
+            }
+
+            .sectionPrigioniero, .statoPrigione {
+                flex-shrink: 0;
+                min-width: 20rem;
+                max-height: 50rem;
+                padding: inherit;
+                background-color: transparent;
+
+            }
+
+
+        }
+
+    }
+
+    .card {
+        padding: 2rem;
+              transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+              box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+}
+
+@keyframes modalUp {
+    from {
+      transform: translateY(-5rem);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
+.formPrigionieri, .formGuardie  {
+    background-color: white;
+    text-align: center;
+    .inputField {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0rem;
+    }
+}
+
+
+.card:hover {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}

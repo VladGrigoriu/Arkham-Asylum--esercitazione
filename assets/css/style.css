@@ -1,0 +1,276 @@
+button {
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html {
+  font-size: 62,5%;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+html body {
+  background-color: #2e4ead;
+}
+
+html body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #192B63;
+  color: #fff;
+  padding: 0 2rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+html body header h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+html body header .fa-user {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+html body header .controlBtns {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+html body section {
+  background-color: white;
+}
+
+html body .loginModalContainer {
+  -webkit-animation: modalUp .5s;
+          animation: modalUp .5s;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vh;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+html body .loginModalContainer .loginModal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  width: 20rem;
+  padding: 3rem 5rem;
+  margin: auto;
+}
+
+html body .loginModalContainer .loginModal #modalHeader h2 {
+  margin: 2rem;
+  text-align: center;
+}
+
+html body .loginModalContainer form {
+  text-align: center;
+}
+
+html body .loginModalContainer form .inputField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0rem;
+}
+
+html body .loginModalContainer form button {
+  margin: 0 auto;
+}
+
+html body .mainIndex {
+  display: none;
+  margin: 1rem 5rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+html body .mainIndex .mappaPrigione {
+  background-color: white;
+  width: 30rem;
+}
+
+html body .mainIndex .statoPrigione {
+  background-color: white;
+  width: 25rem;
+}
+
+html body .mainPrigionieri, html body .mainGuardie {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body .mainPrigionieri section, html body .mainGuardie section {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+html body .mainPrigionieri .fascicoli, html body .mainGuardie .fascicoli {
+  display: none;
+}
+
+html body .mainPrigionieri .listaPrigionieriTopBar, html body .mainGuardie .listaPrigionieriTopBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body .mainPrigionieri .listaPrigionieri, html body .mainPrigionieri .listaGuardie, html body .mainGuardie .listaPrigionieri, html body .mainGuardie .listaGuardie {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+html body .mainPrigionieri .listaPrigionieri #insertListaPrigionieri, html body .mainPrigionieri .listaPrigionieri #insertListaGuardie, html body .mainPrigionieri .listaGuardie #insertListaPrigionieri, html body .mainPrigionieri .listaGuardie #insertListaGuardie, html body .mainGuardie .listaPrigionieri #insertListaPrigionieri, html body .mainGuardie .listaPrigionieri #insertListaGuardie, html body .mainGuardie .listaGuardie #insertListaPrigionieri, html body .mainGuardie .listaGuardie #insertListaGuardie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+html body .mainPrigionieri .listaPrigionieri #insertListaPrigionieri .singoloPrigioniero, html body .mainPrigionieri .listaPrigionieri #insertListaPrigionieri .singoloGuardie, html body .mainPrigionieri .listaPrigionieri #insertListaGuardie .singoloPrigioniero, html body .mainPrigionieri .listaPrigionieri #insertListaGuardie .singoloGuardie, html body .mainPrigionieri .listaGuardie #insertListaPrigionieri .singoloPrigioniero, html body .mainPrigionieri .listaGuardie #insertListaPrigionieri .singoloGuardie, html body .mainPrigionieri .listaGuardie #insertListaGuardie .singoloPrigioniero, html body .mainPrigionieri .listaGuardie #insertListaGuardie .singoloGuardie, html body .mainGuardie .listaPrigionieri #insertListaPrigionieri .singoloPrigioniero, html body .mainGuardie .listaPrigionieri #insertListaPrigionieri .singoloGuardie, html body .mainGuardie .listaPrigionieri #insertListaGuardie .singoloPrigioniero, html body .mainGuardie .listaPrigionieri #insertListaGuardie .singoloGuardie, html body .mainGuardie .listaGuardie #insertListaPrigionieri .singoloPrigioniero, html body .mainGuardie .listaGuardie #insertListaPrigionieri .singoloGuardie, html body .mainGuardie .listaGuardie #insertListaGuardie .singoloPrigioniero, html body .mainGuardie .listaGuardie #insertListaGuardie .singoloGuardie {
+  padding: 0.8rem;
+  margin: 0.2rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+html body .mainPrigionieri .listaPrigionieri #insertListaPrigionieri .singoloGuardie, html body .mainPrigionieri .listaPrigionieri #insertListaGuardie .singoloGuardie, html body .mainPrigionieri .listaGuardie #insertListaPrigionieri .singoloGuardie, html body .mainPrigionieri .listaGuardie #insertListaGuardie .singoloGuardie, html body .mainGuardie .listaPrigionieri #insertListaPrigionieri .singoloGuardie, html body .mainGuardie .listaPrigionieri #insertListaGuardie .singoloGuardie, html body .mainGuardie .listaGuardie #insertListaPrigionieri .singoloGuardie, html body .mainGuardie .listaGuardie #insertListaGuardie .singoloGuardie {
+  max-width: 10rem;
+}
+
+html body .mainPrigionieri .sectionPrigioniero, html body .mainPrigionieri .statoPrigione, html body .mainGuardie .sectionPrigioniero, html body .mainGuardie .statoPrigione {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  min-width: 20rem;
+  max-height: 50rem;
+  padding: inherit;
+  background-color: transparent;
+}
+
+html .card {
+  padding: 2rem;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@-webkit-keyframes modalUp {
+  from {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes modalUp {
+  from {
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.formPrigionieri, .formGuardie {
+  background-color: white;
+  text-align: center;
+}
+
+.formPrigionieri .inputField, .formGuardie .inputField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0rem;
+}
+
+.card:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+/*# sourceMappingURL=style.css.map */

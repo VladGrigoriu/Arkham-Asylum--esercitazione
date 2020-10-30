@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gotham Prison</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><h1 class="headerTitle">Gotham Prison</h1></a>
+        <div class="btnsContainer">
+            <button class="btn" id="headerLoginButton">Login</button>
+        </div>
+        <div class="controlBtns">
+            <div class="btnsContainer">
+                <button class="btn" id="headerStatoButton">Stato</button>
+            </div>
+            <div class="btnsContainer">
+                <button class="btn" id="headerPrigionieriButton">Prigionieri</button>
+            </div>
+            <div class="btnsContainer">
+                <button class="btn" id="headerGuardieButton">Guardie</button>
+            </div>
+        </div>
+
+    </header>
+    <div class="loginModalContainer" id="loginModalContainer">
+        <div class="card loginModal">
+            <div id="modalHeader">
+                <h2>Pannello di controllo</h2>
+            </div>
+            <form action="" novalidate>
+                <div class="inputField">
+                    <label for="nomeUtente">Nome utente</label>
+                    <input type="text" value="" name="nomeUtente" id="nomeUtente"><i class="fas fa-signature"></i>
+                </div>
+                <div class="inputField">
+                    <label for="password">Password</label>
+                    &nbsp<input type="password" value="" name="password" id="password"><i class="fas fa-unlock-alt"></i>
+                </div>
+                <button type="click" class="btn" id="buttonLogin">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Da mostrare dopo il login -->
+    <div class="mainIndex" id="mainIndex">
+        <!-- <h1>Prova</h1> -->
+        <section class="card mappaPrigione">
+            <h2>Benvenuto nel carcere di Arkham</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/91/GCPD_Detective_Comics_990.png" alt="logo di Arkham" class="imgMappa">
+            <h3>L'Elizabeth Arkham Asylum for the Criminally Insane</h3>
+            <p>noto semplicemente come <strong>Arkham Asylum</strong> è il manicomio criminale di Gotham City, in cui sono detenuti i criminali più folli e pericolosi contro i quali Batman si è scontrato, come il Joker, l'Enigmista, il Cappellaio Matto, Mr. Freeze, lo Spaventapasseri, Ra's al Ghul e Due Facce. <br><br><br> Il nome del manicomio è stato tratto dai racconti di Howard Phillips Lovecraft, che creò la piccola cittadina di Arkham per servirsene come ambientazione narrativa.</p>
+        </section>
+        <!-- Da spostare a destra -->
+        <section class="card statoPrigione">
+            <h2>Stato prigione</h2>
+            <span>Il numero totale di prigionieri è: </span>
+            <span  id="numPrigionieri"> </span>
+            <br>
+            <br>
+            <span>Il numero di guardie è: </span>
+            <span  id="numGuardie"></span>
+            <div>
+                <h2>Prigionieri</h2>
+                <span>Numero di prigionieri vivi:</span>
+                <span  id="numPrigionieriVivi"> </span>
+                <br>
+                <br>
+                <br>
+                <span>Numero di prigionieri morti:</span>
+                <span  id="numPrigionieriMorti"> </span>
+                <br>
+                <br>
+                <br>
+                <span>Numero di prigionieri scappati:</span>
+                <span  id="numPrigionieriScappati"> </span>
+            </div>
+        </section>
+    </div>
+
+    <!-- PRIGIONIERI -->
+
+    <div class="mainPrigionieri">
+        <!-- Lista da mostrare a destra -->
+        
+        <!-- Form da mostrare a sinistra -->
+        <section class="sectionPrigioniero">
+            <div class="card formPrigionieri" id="formPrigionieri">
+                <div id="prigionieriFormHeader">
+                    <i class="fas fa-id-badge"></i>
+                    <h2>Inserisci Prigioniero</h2>
+
+                </div>
+                <form classe="inserisciPrigioniero" action="" novalidate>
+                    <div class="inputField">
+                        <label for="nomePrigioniero">Nome e Cognome: </label>
+                        <input type="text" value="" name="nomePrigioniero" id="nomePrigioniero">
+                    </div>
+                    <div class="inputField">
+                        <label for="razzaPrigioniero">Razza: </label>
+                        <input type="text" value="" name="razzaPrigioniero" id="razzaPrigioniero">
+                    </div>
+                    <h3>Caratteristiche fisiche</h3>
+                    <div class="inputField">
+                        <label for="coloreOcchi">Colore occhi: </label>
+                        <input type="text" value="" name="coloreOcchi" id="coloreOcchi">
+                    </div>
+                    <div class="inputField">
+                        <label for="coloreCapelli">Colore capelli: </label>
+                        <input type="text" value="" name="coloreCapelli" id="coloreCapelli">
+                    </div>
+                    <div class="inputField">
+                        <label for="altezzaPrigioniero">Altezza: </label>
+                        <input type="text" value="" name="altezzaPrigioniero" id="altezzaPrigioniero">
+                    </div>
+                    <div class="inputField">
+                        <label for="pesoPrigioniero">Peso: </label>
+                        <input type="text" value="" name="pesoPrigioniero" id="pesoPrigioniero">
+                    </div>
+                    <div class="inputField">
+                        <label for="livelloPericolo">Livello di Pericolo: </label>
+                        <input type="number" max="10" min="1" value="" name="livelloPericolo" id="livelloPericolo">
+                    </div>
+                    <button type="submit" class="btn" id="buttonAggiungiPrigioniero">Aggiungi Prigioniero &nbsp <i class="far fa-plus-square"></i></button>
+                    <button type="click" class="btn" id="buttonMostraPrigioniero">Mostra Prigionieri &nbsp <i class="far fa-eye"></i></button>
+                </form>
+            </div>
+            <br>
+            <div class="card formModificaStato formPrigionieri">
+                <i class="fas fa-info-circle"></i>
+                <h2>Modifica stato</h2>
+                <form id="formModificaStato" action="" classe="inserisciFascicolo" novalidate>
+                    <div class="inputField">
+                        <label for="idPrigionieroStato">Id:</label>
+                        <input type="number" value="" name="idPrigionieroStato" id="idPrigionieroStato">
+                    </div>
+                    <div class="inputField">
+                        <label for="statoPrisoner">Stato prigioniero</label>
+                        <select name="vivo-morto" id="vivo-morto" form="formGuardie">
+                            <option value="Vivo">Vivo</option>
+                            <option value="Morto">Morto</option>
+                            <option value="Scappato">Scappato</option>
+                          </select>
+                    </div>
+                    <button type="submit" class="btn" id="buttonCambiaStato">Modifica &nbsp <i class="far fa-plus-square"></i></button>
+
+                </form>
+            </div>
+            <br>
+            <div class="card formPrigionieri">
+                <i class="fas fa-scroll"></i>
+                <h2>Inserisci Fascicolo</h2>
+                <form id="formFascicolo" action="" classe="inserisciFascicolo" novalidate>
+                    <div class="inputField">
+                        <label for="idPrigionieroFascicolo">Id:</label>
+                        <input type="number" value="" name="idPrigionieroFascicolo" id="idPrigionieroFascicolo">
+                    </div>
+                    <div class="inputField">
+                        <label for="carcerazioneFascicolo">Data carcerazione:</label>
+                        <input type="date" value="" name="carcerazioneFascicolo" id="carcerazioneFascicolo">
+                    </div>
+                    <div class="inputField">
+                        <label for="scarcerazioneFascicolo">Data scarcerazione:</label>
+                        <input type="date" value="" name="scarcerazioneFascicolo" id="scarcerazioneFascicolo">
+                    </div>
+                    <div class="inputField">
+                        <label for="reatoCommesso">Reato commesso:</label>
+                        <textarea value="" name="reatoCommesso" id="reatoCommesso"></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="buttonAggiungiFascicolo">Aggiungi Fascicolo &nbsp <i class="far fa-plus-square"></i></button>
+
+                </form>
+            </div>
+            <br>
+            <div class="card fascicoli formPrigionieri" id="fascicoli">
+                <h2>Fascicolo di </h2>
+                <p class="dataCarcerazione">Data Carcerazione: </p>
+                <p class="dataScarcerazione">Data Scarcerazione: </p>
+                <p class="reatoCommesso">Reato commesso: </p>
+
+            </div>
+        </section>
+
+        <section id="listaPrigionieri" class="listaPrigionieri">
+            <div class="listaPrigionieriTopBar">
+                <h1>Prigionieri</h1>
+                <input type="text" id="inputPrigionieri" placeholder="Cerca Prigionieri..."></input>
+            </div>
+<!--             
+            <div class="card fascicoli formPrigionieri" id="fascicoli">
+                <h2>Fascicolo di </h2>
+                <p class="dataCarcerazione">Data Carcerazione: </p>
+                <p class="dataScarcerazione">Data Scarcerazione: </p>
+                <p class="reatoCommesso">Reato commesso: </p>
+
+            </div> -->
+
+            <template id="templatePrigioniero">
+                <div id="singoloPrigioniero" class="singoloPrigioniero">
+                    <h3 class="nomePrigionieroLista"></h3>
+                    <p class="idPrigionieroLista">Id: </p>
+                    <p class="razzaPrigionieroLista">Razza: </p>
+                    <h4>Caratteristiche Fisiche</h4>
+                    <p class="altezzaPrigionieroLista">Altezza: </p>
+                    <p class="coloreOcchiPrigionieroLista">Occhi: </p>
+                    <p class="coloreCapelliPrigionieroLista">Capelli:</p>
+                    <p class="pesoPrigionieroLista">Peso: </p>
+                    <h4 class="pericoloPrigionieroLista">Livello di pericolo: </h4>
+                    <p class="statoPrigioniero">Stato: </p>
+                </div>
+            </template>
+
+            <div class="insertListaPrigionieri" id="insertListaPrigionieri">
+
+            </div>
+
+        </section>
+    </div>
+
+    <!-- GUARDIE -->
+
+    <div class="mainGuardie">
+        <!-- Lista da mostrare a destra -->
+        
+        <!-- Form da mostrare a sinistra -->
+        <section class="statoPrigione">
+            <div class="card formGuardie" id="formGuardie">
+                <div class="GuardieModal">
+                    <div id="GuardieModalHeader">
+                        <i class="fas fa-id-badge"></i>
+                        <h2>Inserisci Guardia</h2>
+                   </div>
+                    <form action="" novalidate>
+                        <div class="inputField">
+                            <label for="nomeGuardia">Nome e Cognome: </label>
+                            <input
+                                type="text"
+                                value=""
+                                name="nomeGuardia"
+                                id="nomeGuardia">
+                        </div>
+                        <div class="inputField">
+                            <label for="dataNascitaGuardia">Data di nascita: </label>
+                            <input
+                                type="date"
+                                value=""
+                                name="dataNascitaGuardia"
+                                id="dataNascitaGuardia">
+                        </div>
+                        <div class="inputField">
+                            <label for="livelloCompetenza">Livello Competenza</label>
+                            <select name="competenza" id="competenza" form="formGuardie">
+                                <option value="principiante">Principiante</option>
+                                <option value="intermedio">Intermedio</option>
+                                <option value="esperto">Esperto</option>
+                              </select>
+                        </div>
+                        <button type="submit" class="btn" id="buttonAggiungiGuardia" >Aggiungi Guardia &nbsp <i class="far fa-plus-square"></i></button>
+                        <button type="click" id="buttonMostraGuardie">Mostra Guardie &nbsp <i class="far fa-eye"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="listaGuardie">
+            <h1>Guardie</h1>
+            <template id="templateGuardie">
+                <div class="singoloGuardie">
+                    <h3 class="nomeGuardieLista"></h3>
+                    <p class="nascitaGuardieLista">Nato il: </p>
+                    <h4 class="esperienzaGuardieLista">Livello di esperienza: </h4>
+                </div>
+            </template>
+
+            <div class="" id="insertListaGuardie">
+
+            </div>
+        </section>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/guardie.js"></script>
+
+</body>
+</html>

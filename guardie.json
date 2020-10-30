@@ -1,0 +1,65 @@
+[
+    {
+        "nome":"Jason Todd",
+        "dataDiNascita": "1995-12-10",
+        "livello":"Principiante"
+
+    },
+    {
+        "nome":"Tim Drake",
+        "dataDiNascita": "1995-12-10",
+        "livello":"Esperto"
+
+    },
+    {
+        "nome":"Damian Marley",
+        "dataDiNascita": "1992-05-15",
+        "livello":"Intermedio"
+
+    },
+    {
+        "nome":"Jim Gordon",
+        "dataDiNascita": "1984-03-22",
+        "livello":"Esperto"
+
+    },
+    {
+        "nome":"Terry McGinnis",
+        "dataDiNascita": "1997-09-10",
+        "livello":"Principiante"
+
+    },
+    {
+        "nome":"Jean Valley",
+        "dataDiNascita": "1980-11-29",
+        "livello":"Esperto"
+
+    },
+    {
+        "nome":"Dick Grayson",
+        "dataDiNascita": "1994-04-23",
+        "livello":"Principiante"
+
+    },
+    {
+        "nome":"Alfred Pennyworth",
+        "dataDiNascita": "1965-09-10",
+        "livello":"Intermedio"
+
+    },
+    {
+        "nome":"Sal Maroni",
+        "dataDiNascita":"1970-12-09",
+        "livello":"Intermedio"
+
+    },
+    {
+        "nome":"Joe Brasco",
+    
+        "dataDiNascita":"1998-02-10",
+        "livello":"Esperto"
+
+    }
+
+
+]
