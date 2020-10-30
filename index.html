@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-
 </head>
-
 <body>
     <header>
         <a href="index.html"><h1 class="headerTitle">Gotham Prison</h1></a>
@@ -32,7 +29,6 @@
                 <button class="btn" id="headerGuardieButton">Guardie</button>
             </div>
         </div>
-
     </header>
     <div class="loginModalContainer" id="loginModalContainer">
         <div class="card loginModal">
@@ -52,7 +48,6 @@
             </form>
         </div>
     </div>
-
     <!-- Da mostrare dopo il login -->
     <div class="mainIndex" id="mainIndex">
         <!-- <h1>Prova</h1> -->
@@ -88,9 +83,7 @@
             </div>
         </section>
     </div>
-
     <!-- PRIGIONIERI -->
-
     <div class="mainPrigionieri">
         <!-- Lista da mostrare a destra -->
         
@@ -154,7 +147,6 @@
                           </select>
                     </div>
                     <button type="submit" class="btn" id="buttonCambiaStato">Modifica &nbsp <i class="far fa-plus-square"></i></button>
-
                 </form>
             </div>
             <br>
@@ -179,7 +171,6 @@
                         <textarea value="" name="reatoCommesso" id="reatoCommesso"></textarea>
                     </div>
                     <button type="submit" class="btn" id="buttonAggiungiFascicolo">Aggiungi Fascicolo &nbsp <i class="far fa-plus-square"></i></button>
-
                 </form>
             </div>
             <br>
@@ -191,21 +182,11 @@
 
             </div>
         </section>
-
         <section id="listaPrigionieri" class="listaPrigionieri">
             <div class="listaPrigionieriTopBar">
                 <h1>Prigionieri</h1>
                 <input type="text" id="inputPrigionieri" placeholder="Cerca Prigionieri..."></input>
             </div>
-<!--             
-            <div class="card fascicoli formPrigionieri" id="fascicoli">
-                <h2>Fascicolo di </h2>
-                <p class="dataCarcerazione">Data Carcerazione: </p>
-                <p class="dataScarcerazione">Data Scarcerazione: </p>
-                <p class="reatoCommesso">Reato commesso: </p>
-
-            </div> -->
-
             <template id="templatePrigioniero">
                 <div id="singoloPrigioniero" class="singoloPrigioniero">
                     <h3 class="nomePrigionieroLista"></h3>
@@ -227,12 +208,9 @@
 
         </section>
     </div>
-
     <!-- GUARDIE -->
-
     <div class="mainGuardie">
         <!-- Lista da mostrare a destra -->
-        
         <!-- Form da mostrare a sinistra -->
         <section class="statoPrigione">
             <div class="card formGuardie" id="formGuardie">
@@ -272,7 +250,6 @@
                 </div>
             </div>
         </section>
-
         <section class="listaGuardie">
             <h1>Guardie</h1>
             <template id="templateGuardie">
@@ -282,16 +259,12 @@
                     <h4 class="esperienzaGuardieLista">Livello di esperienza: </h4>
                 </div>
             </template>
-
             <div class="" id="insertListaGuardie">
-
             </div>
         </section>
     </div>
-
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/guardie.js"></script>
-
 </body>
 </html>
